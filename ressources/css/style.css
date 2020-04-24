@@ -119,4 +119,9 @@ body footer {
       -ms-flex-align: center;
           align-items: center;
 }
+
+body #logo {
+  color: #ffffff;
+  padding-left: 90%;
+}
 /*# sourceMappingURL=style.css.map */
