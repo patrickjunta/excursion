@@ -1,0 +1,57 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
+$colors:(
+    primary: #ffffff,
+    secondary: #b8b2b2,
+    background: #000000,
+    accent: #67d667
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+body {
+    background-color: color(background);
+    
+    h1 {
+        text-align: center;
+        color: color(primary);
+        font-size: 50px;
+        font-family: 'Verdana';
+        font-weight: normal;
+    }
+
+    p, a {
+        font-size: 16px;
+        color: color(accent);
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .videocontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+    h4 {
+        font-size: 21px;
+        color: color(secondary);
+        font-family: 'Verdana';
+    }
+
+    .midcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
